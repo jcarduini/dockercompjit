@@ -1,0 +1,41 @@
+
+Link oficial: https://docs.docker.com/engine/reference/builder/
+
+#### -------- CONSTRUÇÃO DA IMAGEM NO DOCKER ---------- ###
+
+	# CLONAR DOCKERFILE #
+		$ git clone https://github.com/jcarduini/dockercompjit.git
+
+	# CONTRUIR IMAGEM DO DOCKERFILE
+		$ cd dockercompjit
+		$ docker build -t ubuntu:1.0 .
+
+	# CRIAR UM CONTAINER A PARTIR DA IMAGEM CONSTRUIDA
+		$ docker run -ti ubuntu:1.0 /bin/bash
+
+### ------------- MAIS COMANDOS -------------- ###
+
+	# LISTAR IMAGENS 
+		$ docker images
+
+	# LISTAR CONTAINER
+		$ docker ps -a
+
+	# LISTAR CONTAINER ativos
+		$ docker ps
+
+	# CRIAR CONTAINER A PARTIR DA IMAGEM E ENTRAR NELE
+		$ docker run -i -t IMAGEMID /bin/bash
+	
+	# SAIR DO CONTAINER
+		$ ctrl+p+q
+
+	# ENCERRAR CONTAINER
+		$ ctrl+d
+
+	
+
+
+
+
+

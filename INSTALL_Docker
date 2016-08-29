@@ -1,0 +1,31 @@
+#### -------- INSTALACAO DO DOCKER NO LINUX ---------- ###
+
+Instalação no UBUNTU: https://docs.docker.com/engine/installation/linux/ubuntulinux/
+Para outras distribuições Linux: https://docs.docker.com/engine/installation/linux/
+
+# PRE-REQUISITOS #
+	kernel > 3.9
+	$ uname -r
+	
+ ------------ OPCAO 1 (VALIDO PARA TODAS AS DISTRIBUICOES LINUX): -----------
+
+	# INSTALACAO COMPLETA
+		$ curl -sSL https://get.docker.com | sh
+
+	# INICIA DOCKER
+		$ /etc/init.d/docker start
+
+ ------------------- OPCAO 2 (VALIDO PARA LINUX UBUNTU): -----------------
+
+	# ATUALIZACAO SOURCES
+		$ apt-get install apt-transport-https ca-certificates
+
+	# INSTALACAO #
+		$ sudo apt-get update
+		$ sudo apt-get install docker-engine
+
+	# INICIA DOCKER
+		$ sudo service docker start
+
+# VERIFICA INSTALACAO
+	$ sudo docker run hello-world

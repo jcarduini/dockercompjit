@@ -1,0 +1,7 @@
+# Instruções para instalação protótipo do compilador JIT usando Docker #
+
+--- PASSO 1: Instalação do Docker
+	instruções em INSALL_Docker
+
+--- PASSO 2: Criação da imagem
+	instruções em BUILD_Image
