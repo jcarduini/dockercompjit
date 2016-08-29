@@ -5,7 +5,7 @@
 FROM ubuntu:14.04
 MAINTAINER Júlia Caroline <jcarduini@gmail.com>
 
-ADD README /root/
+ADD README.md /root/
 RUN apt-get update && apt-get install -y \
 	build-essential \
 	cmake \
