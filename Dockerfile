@@ -21,7 +21,8 @@ RUN wget -P /root/ https://cmake.org/files/v3.6/cmake-3.6.1.tar.gz \
 	&& tar -xzvf cmake-3.6.1.tar.gz \
 	&& cd cmake-3.6.1 \
 	&& ./configure
-	&& make && make install
+RUN make 
+RUN make install
 
 WORKDIR /root/ 
 RUN git clone https://github.com/karies/cling-all-in-one.git \
