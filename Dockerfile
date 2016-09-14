@@ -41,6 +41,8 @@ RUN \
 WORKDIR /root/cling-all-in-one 
 RUN ./clone.sh
 
+WORKDIR /root/compJIT
+
 # DECLARACAO DE VARIAVEIS DE AMBIENTE
 ENV PREFIX=/root/cling-all-in-one/inst
 ENV PATH=$PREFIX/bin:$PATH
