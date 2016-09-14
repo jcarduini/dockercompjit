@@ -21,6 +21,7 @@ RUN \
 	openssl libssl-dev && \
 	rm -rf /var/lib/apt/lists/*
 # CMake
+WORKDIR /root/ 
 RUN \
 	wget -P /root/ https://cmake.org/files/v3.6/cmake-3.6.1.tar.gz && \
 	tar -xzvf cmake-3.6.1.tar.gz && \
